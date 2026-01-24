@@ -116,6 +116,5 @@ def main():
     escolher_opc()
 
 
-
 if __name__ == '__main__':
     main()
