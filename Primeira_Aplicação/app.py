@@ -15,6 +15,9 @@ def exibir_nome():
 """)
 
 def exibir_opcoes():
+    '''
+    Mostra no terminal as opções disponíveis do menu principal do sistema.
+    '''
     print("1. Cadastrar restaurante")
     print("2. Listar restaurante")
     print("3. Alternar estado")
@@ -54,6 +57,12 @@ def escolher_opc():
         opcao_invalida()
 
 def cadastrar_restaurante():
+    '''
+    Cadastra um novo restaurante no sistema Sabor Express.
+
+    Solicita nome e categoria via input e adiciona o restaurante 
+    à lista global de restaurantes, desde que ainda não exista
+    '''
     exibir_subtitulo('Cadastro de novos restaurantes')
 
     nome_restaurante = input("Informe o nome do restaurante: ")
@@ -118,3 +127,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+    '''
+    Controla o fluxo principal da aplicação, exibindo o menu inicial e iniciando a interação com o usuário.
+    '''
