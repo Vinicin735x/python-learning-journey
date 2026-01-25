@@ -95,6 +95,10 @@ def listar_restaurantes():
     main()
 
 def alternar_estado():
+    '''
+    Alterna o status (ativado/desativado) de um restaurante existente no sistema com base no nome 
+    informado pelo usuário, exibindo uma mensagem de confirmação ou erro conforme o caso.
+    '''
     exibir_subtitulo("Alternando o estado do restaurante")
 
     nome_restaurante = input("Digite o nome do restaurante que deseja alternar o estado: ")
