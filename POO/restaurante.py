@@ -7,12 +7,12 @@ class Restaurante:
         Restaurante.restaurantes.append(self)
 
     def __str__(self):
-        return f'{self.nome} | {self.categoria}'
+        return f'{self.nome} | {self.categoria} | {self.ativo}'
     
-    def listar_restaurantes():
-        for restaurante in Restaurante.restaurantes:
-            print(f'{restaurante.nome} | {restaurante.categoria} | {restaurante.ativo}')
-         
+    @classmethod
+    def listar_restaurantes(cls):
+        for restaurante in cls.restaurantes:
+            print(restaurante)
     
 restaurante_praca = Restaurante('Restaurante 1', 'Pizzaria')
 restaurante_pizza = Restaurante('Restaurante 2', 'Marmitaria')
